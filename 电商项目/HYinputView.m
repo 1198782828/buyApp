@@ -7,6 +7,7 @@
 //
 
 #import "HYinputView.h"
+#import "HYLoginViewController.h"
 
 @interface HYinputView ()
 
@@ -111,6 +112,8 @@
         [_passText setBorderStyle:(UITextBorderStyleNone)];
         _passText.backgroundColor = [UIColor whiteColor];
         [_passText setPlaceholder:@"请输入您的密码"];
+        [_passText setSecureTextEntry:YES];
+    
     }
     return _passText;
 }
@@ -133,12 +136,18 @@
 
 - (UIButton *)loginButton {
     if (!_loginButton) {
-        _loginButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        _loginButton = [UIButton buttonWithType:(UIButtonTypeSystem)];
         [_loginButton setTitle:@"免费注册" forState:(UIControlStateNormal)];
         [_loginButton setTitleColor:RGB(55, 139, 179) forState:(UIControlStateNormal)];
         _loginButton.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        [_loginButton addTarget:self action:@selector(LoginMethod) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _loginButton;
+}
+
+- (void)LoginMethod {
+    HYLoginViewController * loginVC = [[HYLoginViewController alloc]init];
+    [self.viewController.navigationController pushViewController:loginVC animated:YES];
 }
 
 @end

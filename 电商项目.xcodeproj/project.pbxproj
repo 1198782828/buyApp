@@ -10,6 +10,8 @@
 		127858DE18B4B4A32980D703 /* libPods-电商项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DA89E7FF2A6C8F143C7FF /* libPods-电商项目.a */; };
 		1564441C4BD437B2BF0C1BE1 /* libPods-电商项目Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F0C37DE2B979F44B9C0DC9 /* libPods-电商项目Tests.a */; };
 		2C0E78041D12DE72006EFDCF /* HYLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E78031D12DE72006EFDCF /* HYLoginDialog.m */; };
+		2C536DB11D13E9F500F1E354 /* HYLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C536DB01D13E9F500F1E354 /* HYLoginView.m */; };
+		2C536DB41D14145800F1E354 /* HYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C536DB31D14145800F1E354 /* HYLoginViewController.m */; };
 		2C5CED4E1D123D6500E53B9D /* HYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED4D1D123D6500E53B9D /* HYBaseViewController.m */; };
 		2C5CED521D123E2800E53B9D /* HYTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED511D123E2800E53B9D /* HYTimeViewController.m */; };
 		2C5CED551D123E6500E53B9D /* HYCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED541D123E6500E53B9D /* HYCategoryViewController.m */; };
@@ -61,6 +63,10 @@
 		022EF4F7653B72A0791935BD /* libPods-电商项目UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商项目UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0E78021D12DE72006EFDCF /* HYLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginDialog.h; sourceTree = "<group>"; };
 		2C0E78031D12DE72006EFDCF /* HYLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginDialog.m; sourceTree = "<group>"; };
+		2C536DAF1D13E9F500F1E354 /* HYLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginView.h; sourceTree = "<group>"; };
+		2C536DB01D13E9F500F1E354 /* HYLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginView.m; sourceTree = "<group>"; };
+		2C536DB21D14145800F1E354 /* HYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginViewController.h; sourceTree = "<group>"; };
+		2C536DB31D14145800F1E354 /* HYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginViewController.m; sourceTree = "<group>"; };
 		2C5CED4C1D123D6500E53B9D /* HYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBaseViewController.h; sourceTree = "<group>"; };
 		2C5CED4D1D123D6500E53B9D /* HYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBaseViewController.m; sourceTree = "<group>"; };
 		2C5CED501D123E2800E53B9D /* HYTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTimeViewController.h; sourceTree = "<group>"; };
@@ -164,6 +170,33 @@
 			children = (
 				2C0E78021D12DE72006EFDCF /* HYLoginDialog.h */,
 				2C0E78031D12DE72006EFDCF /* HYLoginDialog.m */,
+				2C5CED911D127E2E00E53B9D /* Masonry约束练习登录界面 */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2C536DA91D13E78300F1E354 /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "网络请求";
+			sourceTree = "<group>";
+		};
+		2C536DAA1D13E8B000F1E354 /* 注册界面 */ = {
+			isa = PBXGroup;
+			children = (
+				2C536DB21D14145800F1E354 /* HYLoginViewController.h */,
+				2C536DB31D14145800F1E354 /* HYLoginViewController.m */,
+				2C536DB51D14147400F1E354 /* view */,
+			);
+			name = "注册界面";
+			sourceTree = "<group>";
+		};
+		2C536DB51D14147400F1E354 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C536DAF1D13E9F500F1E354 /* HYLoginView.h */,
+				2C536DB01D13E9F500F1E354 /* HYLoginView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -206,6 +239,7 @@
 				2C5CED5C1D123ED300E53B9D /* HYMineViewController.h */,
 				2C5CED5D1D123ED300E53B9D /* HYMineViewController.m */,
 				2C0E78001D12DE0D006EFDCF /* view */,
+				2C536DAA1D13E8B000F1E354 /* 注册界面 */,
 			);
 			name = "我的";
 			sourceTree = "<group>";
@@ -259,14 +293,14 @@
 			name = "第三方库";
 			sourceTree = "<group>";
 		};
-		2C5CED911D127E2E00E53B9D /* Masonry约束练习 */ = {
+		2C5CED911D127E2E00E53B9D /* Masonry约束练习登录界面 */ = {
 			isa = PBXGroup;
 			children = (
 				2C5CED921D127E7000E53B9D /* HYMasonryViewController.h */,
 				2C5CED931D127E7000E53B9D /* HYMasonryViewController.m */,
 				2C5CED951D12804700E53B9D /* view */,
 			);
-			name = "Masonry约束练习";
+			name = "Masonry约束练习登录界面";
 			sourceTree = "<group>";
 		};
 		2C5CED951D12804700E53B9D /* view */ = {
@@ -308,12 +342,12 @@
 				2C7340481D10E766006A9DC4 /* AppDelegate.h */,
 				2C7340491D10E766006A9DC4 /* AppDelegate.m */,
 				2C5CED691D1254B300E53B9D /* PrefixHeader.pch */,
+				2C536DA91D13E78300F1E354 /* 网络请求 */,
 				2C5CED411D12354C00E53B9D /* 控制器 */,
 				2C5CED421D123C7700E53B9D /* 限时购 */,
 				2C5CED451D123CA200E53B9D /* 分类 */,
 				2C5CED431D123C9500E53B9D /* 购物车 */,
 				2C5CED441D123C9D00E53B9D /* 我的 */,
-				2C5CED911D127E2E00E53B9D /* Masonry约束练习 */,
 				2C5CED901D127DA800E53B9D /* 第三方库 */,
 				2C7340451D10E766006A9DC4 /* Supporting Files */,
 			);
@@ -647,6 +681,7 @@
 				2C5CED891D127DA000E53B9D /* MASLayoutConstraint.m in Sources */,
 				2C5CED8F1D127DA000E53B9D /* ViewController+MASAdditions.m in Sources */,
 				2C5CED871D127DA000E53B9D /* MASConstraint.m in Sources */,
+				2C536DB11D13E9F500F1E354 /* HYLoginView.m in Sources */,
 				2C73404A1D10E766006A9DC4 /* AppDelegate.m in Sources */,
 				2C5CED9B1D12810400E53B9D /* HYthirdVIew.m in Sources */,
 				2C5CED941D127E7000E53B9D /* HYMasonryViewController.m in Sources */,
@@ -657,6 +692,7 @@
 				2C5CED981D1280F800E53B9D /* HYinputView.m in Sources */,
 				2C5CED681D1251CA00E53B9D /* main.m in Sources */,
 				2C5CED611D123F2E00E53B9D /* HYNavigationController.m in Sources */,
+				2C536DB41D14145800F1E354 /* HYLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
