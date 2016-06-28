@@ -10,6 +10,9 @@
 		127858DE18B4B4A32980D703 /* libPods-电商项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DA89E7FF2A6C8F143C7FF /* libPods-电商项目.a */; };
 		1564441C4BD437B2BF0C1BE1 /* libPods-电商项目Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F0C37DE2B979F44B9C0DC9 /* libPods-电商项目Tests.a */; };
 		2C0E78041D12DE72006EFDCF /* HYLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E78031D12DE72006EFDCF /* HYLoginDialog.m */; };
+		2C2D480E1D1BB234008B9AE9 /* HYChangeButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D480D1D1BB234008B9AE9 /* HYChangeButtonView.m */; };
+		2C2D48111D1C1EB5008B9AE9 /* HYXinPinTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D48101D1C1EB5008B9AE9 /* HYXinPinTableView.m */; };
+		2C2D48141D1C1EC7008B9AE9 /* HYPinPaiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D48131D1C1EC7008B9AE9 /* HYPinPaiTableView.m */; };
 		2C536DB11D13E9F500F1E354 /* HYLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C536DB01D13E9F500F1E354 /* HYLoginView.m */; };
 		2C536DB41D14145800F1E354 /* HYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C536DB31D14145800F1E354 /* HYLoginViewController.m */; };
 		2C5CED4E1D123D6500E53B9D /* HYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED4D1D123D6500E53B9D /* HYBaseViewController.m */; };
@@ -34,11 +37,46 @@
 		2C5CED941D127E7000E53B9D /* HYMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED931D127E7000E53B9D /* HYMasonryViewController.m */; };
 		2C5CED981D1280F800E53B9D /* HYinputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED971D1280F800E53B9D /* HYinputView.m */; };
 		2C5CED9B1D12810400E53B9D /* HYthirdVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CED9A1D12810400E53B9D /* HYthirdVIew.m */; };
+		2C5D03151D1E1491008AE18E /* HYPinPaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D03141D1E1491008AE18E /* HYPinPaiTableViewCell.m */; };
+		2C5D03191D1E1A79008AE18E /* HYCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D03181D1E1A79008AE18E /* HYCollectionView.m */; };
+		2C5D031C1D1E2468008AE18E /* HYCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D031B1D1E2468008AE18E /* HYCollectionReusableView.m */; };
+		2C5D031F1D1E28CB008AE18E /* HYEffectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D031E1D1E28CB008AE18E /* HYEffectCollectionViewCell.m */; };
+		2C5D03221D1E595A008AE18E /* HYElseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D03211D1E595A008AE18E /* HYElseCollectionViewCell.m */; };
+		2C679B161D1CDBE600E68808 /* HYXinPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C679B151D1CDBE600E68808 /* HYXinPinModel.m */; };
+		2C67D83B1D20BEF2007B46F1 /* HYXinPinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D83A1D20BEF2007B46F1 /* HYXinPinTableViewCell.m */; };
+		2C67D8471D211939007B46F1 /* HYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D8461D211939007B46F1 /* HYSearchViewController.m */; };
+		2C67D84E1D211AD4007B46F1 /* HYClassShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D84D1D211AD4007B46F1 /* HYClassShopViewController.m */; };
+		2C67D8521D21577C007B46F1 /* HYClassShopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D8511D21577C007B46F1 /* HYClassShopCollectionView.m */; };
+		2C6AEE511D19363700987075 /* HYThirdLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AEE501D19363700987075 /* HYThirdLogin.m */; };
+		2C6D9B551D17823C0032224E /* HYLoginTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D9B541D17823C0032224E /* HYLoginTableView.m */; };
+		2C6D9B581D17DAF30032224E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B561D17D0600032224E /* SystemConfiguration.framework */; };
+		2C6D9B5A1D17DB530032224E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B591D17DB530032224E /* Security.framework */; };
+		2C6D9B5C1D17DB670032224E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B5B1D17DB670032224E /* libiconv.tbd */; };
+		2C6D9B5E1D17DB840032224E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B5D1D17DB840032224E /* CoreGraphics.framework */; };
+		2C6D9B601D17DB970032224E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B5F1D17DB970032224E /* libsqlite3.tbd */; };
+		2C6D9B621D17DBA40032224E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B611D17DBA40032224E /* CoreTelephony.framework */; };
+		2C6D9B641D17DBB20032224E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B631D17DBB20032224E /* libstdc++.tbd */; };
+		2C6D9B661D17DBBD0032224E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D9B651D17DBBD0032224E /* libz.tbd */; };
+		2C6D9B691D180EA90032224E /* HYYetLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D9B681D180EA90032224E /* HYYetLoginView.m */; };
 		2C73404A1D10E766006A9DC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7340491D10E766006A9DC4 /* AppDelegate.m */; };
 		2C7340521D10E766006A9DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7340511D10E766006A9DC4 /* Assets.xcassets */; };
 		2C7340551D10E766006A9DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7340531D10E766006A9DC4 /* LaunchScreen.storyboard */; };
 		2C7340601D10E766006A9DC4 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C73405F1D10E766006A9DC4 /* ____Tests.m */; };
 		2C73406B1D10E766006A9DC4 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C73406A1D10E766006A9DC4 /* ____UITests.m */; };
+		2CC6453D1D1A8E2300BB92A8 /* HYVerificationCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC6453C1D1A8E2300BB92A8 /* HYVerificationCode.m */; };
+		2CC645421D1A93E800BB92A8 /* HYVerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC645411D1A93E800BB92A8 /* HYVerificationCodeViewController.m */; };
+		2CF3AB131D216B41008D28E2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3AAFB1D216B41008D28E2 /* LICENSE */; };
+		2CF3AB141D216B41008D28E2 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AAFF1D216B41008D28E2 /* MJExtensionConst.m */; };
+		2CF3AB151D216B41008D28E2 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB011D216B41008D28E2 /* MJFoundation.m */; };
+		2CF3AB161D216B41008D28E2 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB031D216B41008D28E2 /* MJProperty.m */; };
+		2CF3AB171D216B41008D28E2 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB051D216B41008D28E2 /* MJPropertyKey.m */; };
+		2CF3AB181D216B41008D28E2 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB071D216B41008D28E2 /* MJPropertyType.m */; };
+		2CF3AB191D216B41008D28E2 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB091D216B41008D28E2 /* NSObject+MJClass.m */; };
+		2CF3AB1A1D216B41008D28E2 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB0B1D216B41008D28E2 /* NSObject+MJCoding.m */; };
+		2CF3AB1B1D216B41008D28E2 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB0D1D216B41008D28E2 /* NSObject+MJKeyValue.m */; };
+		2CF3AB1C1D216B41008D28E2 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB0F1D216B41008D28E2 /* NSObject+MJProperty.m */; };
+		2CF3AB1D1D216B41008D28E2 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB111D216B41008D28E2 /* NSString+MJExtension.m */; };
+		2CF3AB1E1D216B41008D28E2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3AB121D216B41008D28E2 /* README.md */; };
 		CF490442313A576F93A60DA3 /* libPods-电商项目UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 022EF4F7653B72A0791935BD /* libPods-电商项目UITests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +101,12 @@
 		022EF4F7653B72A0791935BD /* libPods-电商项目UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商项目UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0E78021D12DE72006EFDCF /* HYLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginDialog.h; sourceTree = "<group>"; };
 		2C0E78031D12DE72006EFDCF /* HYLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginDialog.m; sourceTree = "<group>"; };
+		2C2D480C1D1BB234008B9AE9 /* HYChangeButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYChangeButtonView.h; sourceTree = "<group>"; };
+		2C2D480D1D1BB234008B9AE9 /* HYChangeButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYChangeButtonView.m; sourceTree = "<group>"; };
+		2C2D480F1D1C1EB5008B9AE9 /* HYXinPinTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXinPinTableView.h; sourceTree = "<group>"; };
+		2C2D48101D1C1EB5008B9AE9 /* HYXinPinTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYXinPinTableView.m; sourceTree = "<group>"; };
+		2C2D48121D1C1EC7008B9AE9 /* HYPinPaiTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPinPaiTableView.h; sourceTree = "<group>"; };
+		2C2D48131D1C1EC7008B9AE9 /* HYPinPaiTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPinPaiTableView.m; sourceTree = "<group>"; };
 		2C536DAF1D13E9F500F1E354 /* HYLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginView.h; sourceTree = "<group>"; };
 		2C536DB01D13E9F500F1E354 /* HYLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginView.m; sourceTree = "<group>"; };
 		2C536DB21D14145800F1E354 /* HYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginViewController.h; sourceTree = "<group>"; };
@@ -115,6 +159,40 @@
 		2C5CED971D1280F800E53B9D /* HYinputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYinputView.m; sourceTree = "<group>"; };
 		2C5CED991D12810400E53B9D /* HYthirdVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYthirdVIew.h; sourceTree = "<group>"; };
 		2C5CED9A1D12810400E53B9D /* HYthirdVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYthirdVIew.m; sourceTree = "<group>"; };
+		2C5D03131D1E1491008AE18E /* HYPinPaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPinPaiTableViewCell.h; sourceTree = "<group>"; };
+		2C5D03141D1E1491008AE18E /* HYPinPaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPinPaiTableViewCell.m; sourceTree = "<group>"; };
+		2C5D03171D1E1A79008AE18E /* HYCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCollectionView.h; sourceTree = "<group>"; };
+		2C5D03181D1E1A79008AE18E /* HYCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCollectionView.m; sourceTree = "<group>"; };
+		2C5D031A1D1E2468008AE18E /* HYCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCollectionReusableView.h; sourceTree = "<group>"; };
+		2C5D031B1D1E2468008AE18E /* HYCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCollectionReusableView.m; sourceTree = "<group>"; };
+		2C5D031D1D1E28CB008AE18E /* HYEffectCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYEffectCollectionViewCell.h; sourceTree = "<group>"; };
+		2C5D031E1D1E28CB008AE18E /* HYEffectCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYEffectCollectionViewCell.m; sourceTree = "<group>"; };
+		2C5D03201D1E595A008AE18E /* HYElseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYElseCollectionViewCell.h; sourceTree = "<group>"; };
+		2C5D03211D1E595A008AE18E /* HYElseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYElseCollectionViewCell.m; sourceTree = "<group>"; };
+		2C679B111D1CD24B00E68808 /* HYXinPinTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXinPinTableViewCell.h; sourceTree = "<group>"; };
+		2C679B141D1CDBE600E68808 /* HYXinPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXinPinModel.h; sourceTree = "<group>"; };
+		2C679B151D1CDBE600E68808 /* HYXinPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYXinPinModel.m; sourceTree = "<group>"; };
+		2C67D83A1D20BEF2007B46F1 /* HYXinPinTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYXinPinTableViewCell.m; sourceTree = "<group>"; };
+		2C67D8451D211939007B46F1 /* HYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSearchViewController.h; sourceTree = "<group>"; };
+		2C67D8461D211939007B46F1 /* HYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSearchViewController.m; sourceTree = "<group>"; };
+		2C67D84C1D211AD4007B46F1 /* HYClassShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYClassShopViewController.h; sourceTree = "<group>"; };
+		2C67D84D1D211AD4007B46F1 /* HYClassShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYClassShopViewController.m; sourceTree = "<group>"; };
+		2C67D8501D21577C007B46F1 /* HYClassShopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYClassShopCollectionView.h; sourceTree = "<group>"; };
+		2C67D8511D21577C007B46F1 /* HYClassShopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYClassShopCollectionView.m; sourceTree = "<group>"; };
+		2C6AEE4F1D19363700987075 /* HYThirdLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYThirdLogin.h; sourceTree = "<group>"; };
+		2C6AEE501D19363700987075 /* HYThirdLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYThirdLogin.m; sourceTree = "<group>"; };
+		2C6D9B531D17823C0032224E /* HYLoginTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginTableView.h; sourceTree = "<group>"; };
+		2C6D9B541D17823C0032224E /* HYLoginTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginTableView.m; sourceTree = "<group>"; };
+		2C6D9B561D17D0600032224E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2C6D9B591D17DB530032224E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2C6D9B5B1D17DB670032224E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		2C6D9B5D1D17DB840032224E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C6D9B5F1D17DB970032224E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2C6D9B611D17DBA40032224E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2C6D9B631D17DBB20032224E /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		2C6D9B651D17DBBD0032224E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2C6D9B671D180EA90032224E /* HYYetLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYYetLoginView.h; sourceTree = "<group>"; };
+		2C6D9B681D180EA90032224E /* HYYetLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYYetLoginView.m; sourceTree = "<group>"; };
 		2C7340421D10E766006A9DC4 /* 电商项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电商项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7340481D10E766006A9DC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C7340491D10E766006A9DC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,6 +205,33 @@
 		2C7340661D10E766006A9DC4 /* 电商项目UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "电商项目UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C73406A1D10E766006A9DC4 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		2C73406C1D10E766006A9DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC6453B1D1A8E2300BB92A8 /* HYVerificationCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVerificationCode.h; sourceTree = "<group>"; };
+		2CC6453C1D1A8E2300BB92A8 /* HYVerificationCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVerificationCode.m; sourceTree = "<group>"; };
+		2CC645401D1A93E800BB92A8 /* HYVerificationCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVerificationCodeViewController.h; sourceTree = "<group>"; };
+		2CC645411D1A93E800BB92A8 /* HYVerificationCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVerificationCodeViewController.m; sourceTree = "<group>"; };
+		2CF3AAFB1D216B41008D28E2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2CF3AAFD1D216B41008D28E2 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		2CF3AAFE1D216B41008D28E2 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		2CF3AAFF1D216B41008D28E2 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		2CF3AB001D216B41008D28E2 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		2CF3AB011D216B41008D28E2 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		2CF3AB021D216B41008D28E2 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		2CF3AB031D216B41008D28E2 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		2CF3AB041D216B41008D28E2 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		2CF3AB051D216B41008D28E2 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		2CF3AB061D216B41008D28E2 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		2CF3AB071D216B41008D28E2 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		2CF3AB081D216B41008D28E2 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		2CF3AB091D216B41008D28E2 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		2CF3AB0A1D216B41008D28E2 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		2CF3AB0B1D216B41008D28E2 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		2CF3AB0C1D216B41008D28E2 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		2CF3AB0D1D216B41008D28E2 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		2CF3AB0E1D216B41008D28E2 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		2CF3AB0F1D216B41008D28E2 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		2CF3AB101D216B41008D28E2 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		2CF3AB111D216B41008D28E2 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		2CF3AB121D216B41008D28E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		32F0C37DE2B979F44B9C0DC9 /* libPods-电商项目Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电商项目Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA62A2BE3E90C70B295C6F9 /* Pods-电商项目Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商项目Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商项目Tests/Pods-电商项目Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5255576C337FE0527E996C98 /* Pods-电商项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电商项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电商项目/Pods-电商项目.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +247,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6D9B661D17DBBD0032224E /* libz.tbd in Frameworks */,
+				2C6D9B641D17DBB20032224E /* libstdc++.tbd in Frameworks */,
+				2C6D9B621D17DBA40032224E /* CoreTelephony.framework in Frameworks */,
+				2C6D9B601D17DB970032224E /* libsqlite3.tbd in Frameworks */,
+				2C6D9B5E1D17DB840032224E /* CoreGraphics.framework in Frameworks */,
+				2C6D9B581D17DAF30032224E /* SystemConfiguration.framework in Frameworks */,
+				2C6D9B5C1D17DB670032224E /* libiconv.tbd in Frameworks */,
+				2C6D9B5A1D17DB530032224E /* Security.framework in Frameworks */,
 				127858DE18B4B4A32980D703 /* libPods-电商项目.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,16 +283,12 @@
 			children = (
 				2C0E78021D12DE72006EFDCF /* HYLoginDialog.h */,
 				2C0E78031D12DE72006EFDCF /* HYLoginDialog.m */,
-				2C5CED911D127E2E00E53B9D /* Masonry约束练习登录界面 */,
+				2C6D9B531D17823C0032224E /* HYLoginTableView.h */,
+				2C6D9B541D17823C0032224E /* HYLoginTableView.m */,
+				2C6D9B671D180EA90032224E /* HYYetLoginView.h */,
+				2C6D9B681D180EA90032224E /* HYYetLoginView.m */,
 			);
 			name = view;
-			sourceTree = "<group>";
-		};
-		2C536DA91D13E78300F1E354 /* 网络请求 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "网络请求";
 			sourceTree = "<group>";
 		};
 		2C536DAA1D13E8B000F1E354 /* 注册界面 */ = {
@@ -188,6 +297,7 @@
 				2C536DB21D14145800F1E354 /* HYLoginViewController.h */,
 				2C536DB31D14145800F1E354 /* HYLoginViewController.m */,
 				2C536DB51D14147400F1E354 /* view */,
+				2CC6453E1D1A938800BB92A8 /* 验证码页面 */,
 			);
 			name = "注册界面";
 			sourceTree = "<group>";
@@ -204,8 +314,7 @@
 		2C5CED411D12354C00E53B9D /* 控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				2C5CED4C1D123D6500E53B9D /* HYBaseViewController.h */,
-				2C5CED4D1D123D6500E53B9D /* HYBaseViewController.m */,
+				2C67D83C1D20CBBA007B46F1 /* 基类 */,
 				2C5CED5F1D123F2E00E53B9D /* HYNavigationController.h */,
 				2C5CED601D123F2E00E53B9D /* HYNavigationController.m */,
 				2C5CED621D123F4B00E53B9D /* HYTabbarController.h */,
@@ -220,6 +329,9 @@
 			children = (
 				2C5CED501D123E2800E53B9D /* HYTimeViewController.h */,
 				2C5CED511D123E2800E53B9D /* HYTimeViewController.m */,
+				2C67D83D1D20CDF5007B46F1 /* 搜索 */,
+				2C679B071D1CBDAF00E68808 /* model */,
+				2C6AEE521D19425B00987075 /* view */,
 			);
 			name = "限时购";
 			sourceTree = "<group>";
@@ -239,6 +351,7 @@
 				2C5CED5C1D123ED300E53B9D /* HYMineViewController.h */,
 				2C5CED5D1D123ED300E53B9D /* HYMineViewController.m */,
 				2C0E78001D12DE0D006EFDCF /* view */,
+				2C5CED911D127E2E00E53B9D /* Masonry约束练习登录界面 */,
 				2C536DAA1D13E8B000F1E354 /* 注册界面 */,
 			);
 			name = "我的";
@@ -249,6 +362,8 @@
 			children = (
 				2C5CED531D123E6500E53B9D /* HYCategoryViewController.h */,
 				2C5CED541D123E6500E53B9D /* HYCategoryViewController.m */,
+				2C67D8481D2119E2007B46F1 /* 详细view */,
+				2C5D03161D1E16B5008AE18E /* view */,
 			);
 			name = "分类";
 			sourceTree = "<group>";
@@ -288,6 +403,7 @@
 		2C5CED901D127DA800E53B9D /* 第三方库 */ = {
 			isa = PBXGroup;
 			children = (
+				2CF3AAFA1D216B41008D28E2 /* MJExtension */,
 				2C5CED6A1D127DA000E53B9D /* Masonry */,
 			);
 			name = "第三方库";
@@ -298,6 +414,7 @@
 			children = (
 				2C5CED921D127E7000E53B9D /* HYMasonryViewController.h */,
 				2C5CED931D127E7000E53B9D /* HYMasonryViewController.m */,
+				2C6AEE561D195AD200987075 /* 封装第三方登录 */,
 				2C5CED951D12804700E53B9D /* view */,
 			);
 			name = "Masonry约束练习登录界面";
@@ -312,6 +429,93 @@
 				2C5CED9A1D12810400E53B9D /* HYthirdVIew.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		2C5D03161D1E16B5008AE18E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C5D03171D1E1A79008AE18E /* HYCollectionView.h */,
+				2C5D03181D1E1A79008AE18E /* HYCollectionView.m */,
+				2C5D031A1D1E2468008AE18E /* HYCollectionReusableView.h */,
+				2C5D031B1D1E2468008AE18E /* HYCollectionReusableView.m */,
+				2C5D031D1D1E28CB008AE18E /* HYEffectCollectionViewCell.h */,
+				2C5D031E1D1E28CB008AE18E /* HYEffectCollectionViewCell.m */,
+				2C5D03201D1E595A008AE18E /* HYElseCollectionViewCell.h */,
+				2C5D03211D1E595A008AE18E /* HYElseCollectionViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2C679B071D1CBDAF00E68808 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2C679B141D1CDBE600E68808 /* HYXinPinModel.h */,
+				2C679B151D1CDBE600E68808 /* HYXinPinModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2C67D83C1D20CBBA007B46F1 /* 基类 */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CED4C1D123D6500E53B9D /* HYBaseViewController.h */,
+				2C5CED4D1D123D6500E53B9D /* HYBaseViewController.m */,
+			);
+			name = "基类";
+			sourceTree = "<group>";
+		};
+		2C67D83D1D20CDF5007B46F1 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D8451D211939007B46F1 /* HYSearchViewController.h */,
+				2C67D8461D211939007B46F1 /* HYSearchViewController.m */,
+			);
+			name = "搜索";
+			sourceTree = "<group>";
+		};
+		2C67D8481D2119E2007B46F1 /* 详细view */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D84C1D211AD4007B46F1 /* HYClassShopViewController.h */,
+				2C67D84D1D211AD4007B46F1 /* HYClassShopViewController.m */,
+				2C67D84F1D215743007B46F1 /* view */,
+			);
+			name = "详细view";
+			sourceTree = "<group>";
+		};
+		2C67D84F1D215743007B46F1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D8501D21577C007B46F1 /* HYClassShopCollectionView.h */,
+				2C67D8511D21577C007B46F1 /* HYClassShopCollectionView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2C6AEE521D19425B00987075 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D480C1D1BB234008B9AE9 /* HYChangeButtonView.h */,
+				2C2D480D1D1BB234008B9AE9 /* HYChangeButtonView.m */,
+				2C2D480F1D1C1EB5008B9AE9 /* HYXinPinTableView.h */,
+				2C2D48101D1C1EB5008B9AE9 /* HYXinPinTableView.m */,
+				2C679B111D1CD24B00E68808 /* HYXinPinTableViewCell.h */,
+				2C67D83A1D20BEF2007B46F1 /* HYXinPinTableViewCell.m */,
+				2C2D48121D1C1EC7008B9AE9 /* HYPinPaiTableView.h */,
+				2C2D48131D1C1EC7008B9AE9 /* HYPinPaiTableView.m */,
+				2C5D03131D1E1491008AE18E /* HYPinPaiTableViewCell.h */,
+				2C5D03141D1E1491008AE18E /* HYPinPaiTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2C6AEE561D195AD200987075 /* 封装第三方登录 */ = {
+			isa = PBXGroup;
+			children = (
+				2C6AEE4F1D19363700987075 /* HYThirdLogin.h */,
+				2C6AEE501D19363700987075 /* HYThirdLogin.m */,
+			);
+			name = "封装第三方登录";
 			sourceTree = "<group>";
 		};
 		2C7340391D10E766006A9DC4 = {
@@ -342,7 +546,6 @@
 				2C7340481D10E766006A9DC4 /* AppDelegate.h */,
 				2C7340491D10E766006A9DC4 /* AppDelegate.m */,
 				2C5CED691D1254B300E53B9D /* PrefixHeader.pch */,
-				2C536DA91D13E78300F1E354 /* 网络请求 */,
 				2C5CED411D12354C00E53B9D /* 控制器 */,
 				2C5CED421D123C7700E53B9D /* 限时购 */,
 				2C5CED451D123CA200E53B9D /* 分类 */,
@@ -383,9 +586,74 @@
 			path = "电商项目UITests";
 			sourceTree = "<group>";
 		};
+		2CC6453E1D1A938800BB92A8 /* 验证码页面 */ = {
+			isa = PBXGroup;
+			children = (
+				2CC645401D1A93E800BB92A8 /* HYVerificationCodeViewController.h */,
+				2CC645411D1A93E800BB92A8 /* HYVerificationCodeViewController.m */,
+				2CC6453F1D1A93B500BB92A8 /* view */,
+			);
+			name = "验证码页面";
+			sourceTree = "<group>";
+		};
+		2CC6453F1D1A93B500BB92A8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2CC6453B1D1A8E2300BB92A8 /* HYVerificationCode.h */,
+				2CC6453C1D1A8E2300BB92A8 /* HYVerificationCode.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2CF3AAFA1D216B41008D28E2 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3AAFB1D216B41008D28E2 /* LICENSE */,
+				2CF3AAFC1D216B41008D28E2 /* MJExtension */,
+				2CF3AB121D216B41008D28E2 /* README.md */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		2CF3AAFC1D216B41008D28E2 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3AAFD1D216B41008D28E2 /* MJExtension.h */,
+				2CF3AAFE1D216B41008D28E2 /* MJExtensionConst.h */,
+				2CF3AAFF1D216B41008D28E2 /* MJExtensionConst.m */,
+				2CF3AB001D216B41008D28E2 /* MJFoundation.h */,
+				2CF3AB011D216B41008D28E2 /* MJFoundation.m */,
+				2CF3AB021D216B41008D28E2 /* MJProperty.h */,
+				2CF3AB031D216B41008D28E2 /* MJProperty.m */,
+				2CF3AB041D216B41008D28E2 /* MJPropertyKey.h */,
+				2CF3AB051D216B41008D28E2 /* MJPropertyKey.m */,
+				2CF3AB061D216B41008D28E2 /* MJPropertyType.h */,
+				2CF3AB071D216B41008D28E2 /* MJPropertyType.m */,
+				2CF3AB081D216B41008D28E2 /* NSObject+MJClass.h */,
+				2CF3AB091D216B41008D28E2 /* NSObject+MJClass.m */,
+				2CF3AB0A1D216B41008D28E2 /* NSObject+MJCoding.h */,
+				2CF3AB0B1D216B41008D28E2 /* NSObject+MJCoding.m */,
+				2CF3AB0C1D216B41008D28E2 /* NSObject+MJKeyValue.h */,
+				2CF3AB0D1D216B41008D28E2 /* NSObject+MJKeyValue.m */,
+				2CF3AB0E1D216B41008D28E2 /* NSObject+MJProperty.h */,
+				2CF3AB0F1D216B41008D28E2 /* NSObject+MJProperty.m */,
+				2CF3AB101D216B41008D28E2 /* NSString+MJExtension.h */,
+				2CF3AB111D216B41008D28E2 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
 		680BAAC90BC6A6AEA2DD54BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C6D9B651D17DBBD0032224E /* libz.tbd */,
+				2C6D9B631D17DBB20032224E /* libstdc++.tbd */,
+				2C6D9B611D17DBA40032224E /* CoreTelephony.framework */,
+				2C6D9B5F1D17DB970032224E /* libsqlite3.tbd */,
+				2C6D9B5D1D17DB840032224E /* CoreGraphics.framework */,
+				2C6D9B5B1D17DB670032224E /* libiconv.tbd */,
+				2C6D9B591D17DB530032224E /* Security.framework */,
+				2C6D9B561D17D0600032224E /* SystemConfiguration.framework */,
 				EA4DA89E7FF2A6C8F143C7FF /* libPods-电商项目.a */,
 				32F0C37DE2B979F44B9C0DC9 /* libPods-电商项目Tests.a */,
 				022EF4F7653B72A0791935BD /* libPods-电商项目UITests.a */,
@@ -520,6 +788,7 @@
 			files = (
 				2C7340551D10E766006A9DC4 /* LaunchScreen.storyboard in Resources */,
 				2C5CED661D123FA000E53B9D /* UITabbarPlist.plist in Resources */,
+				2CF3AB131D216B41008D28E2 /* LICENSE in Resources */,
 				2C7340521D10E766006A9DC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,30 +937,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF3AB141D216B41008D28E2 /* MJExtensionConst.m in Sources */,
 				2C5CED8B1D127DA000E53B9D /* MASViewConstraint.m in Sources */,
 				2C5CED641D123F4B00E53B9D /* HYTabbarController.m in Sources */,
+				2CF3AB151D216B41008D28E2 /* MJFoundation.m in Sources */,
+				2C67D83B1D20BEF2007B46F1 /* HYXinPinTableViewCell.m in Sources */,
+				2C6D9B551D17823C0032224E /* HYLoginTableView.m in Sources */,
+				2C67D84E1D211AD4007B46F1 /* HYClassShopViewController.m in Sources */,
+				2CF3AB1B1D216B41008D28E2 /* NSObject+MJKeyValue.m in Sources */,
+				2CF3AB171D216B41008D28E2 /* MJPropertyKey.m in Sources */,
+				2C2D48141D1C1EC7008B9AE9 /* HYPinPaiTableView.m in Sources */,
+				2CF3AB181D216B41008D28E2 /* MJPropertyType.m in Sources */,
 				2C5CED8A1D127DA000E53B9D /* MASViewAttribute.m in Sources */,
 				2C5CED4E1D123D6500E53B9D /* HYBaseViewController.m in Sources */,
+				2CF3AB191D216B41008D28E2 /* NSObject+MJClass.m in Sources */,
+				2C5D03191D1E1A79008AE18E /* HYCollectionView.m in Sources */,
+				2CF3AB1A1D216B41008D28E2 /* NSObject+MJCoding.m in Sources */,
 				2C5CED5B1D123EC000E53B9D /* HYShopCarViewController.m in Sources */,
 				2C0E78041D12DE72006EFDCF /* HYLoginDialog.m in Sources */,
 				2C5CED5E1D123ED300E53B9D /* HYMineViewController.m in Sources */,
+				2C2D48111D1C1EB5008B9AE9 /* HYXinPinTableView.m in Sources */,
+				2C2D480E1D1BB234008B9AE9 /* HYChangeButtonView.m in Sources */,
+				2CC6453D1D1A8E2300BB92A8 /* HYVerificationCode.m in Sources */,
+				2CF3AB161D216B41008D28E2 /* MJProperty.m in Sources */,
+				2CC645421D1A93E800BB92A8 /* HYVerificationCodeViewController.m in Sources */,
 				2C5CED861D127DA000E53B9D /* MASCompositeConstraint.m in Sources */,
 				2C5CED881D127DA000E53B9D /* MASConstraintMaker.m in Sources */,
+				2C5D03151D1E1491008AE18E /* HYPinPaiTableViewCell.m in Sources */,
 				2C5CED8E1D127DA000E53B9D /* View+MASAdditions.m in Sources */,
 				2C5CED891D127DA000E53B9D /* MASLayoutConstraint.m in Sources */,
 				2C5CED8F1D127DA000E53B9D /* ViewController+MASAdditions.m in Sources */,
 				2C5CED871D127DA000E53B9D /* MASConstraint.m in Sources */,
+				2CF3AB1D1D216B41008D28E2 /* NSString+MJExtension.m in Sources */,
+				2C6AEE511D19363700987075 /* HYThirdLogin.m in Sources */,
+				2C67D8521D21577C007B46F1 /* HYClassShopCollectionView.m in Sources */,
+				2C679B161D1CDBE600E68808 /* HYXinPinModel.m in Sources */,
 				2C536DB11D13E9F500F1E354 /* HYLoginView.m in Sources */,
+				2C6D9B691D180EA90032224E /* HYYetLoginView.m in Sources */,
 				2C73404A1D10E766006A9DC4 /* AppDelegate.m in Sources */,
+				2C5D031C1D1E2468008AE18E /* HYCollectionReusableView.m in Sources */,
 				2C5CED9B1D12810400E53B9D /* HYthirdVIew.m in Sources */,
 				2C5CED941D127E7000E53B9D /* HYMasonryViewController.m in Sources */,
 				2C5CED521D123E2800E53B9D /* HYTimeViewController.m in Sources */,
+				2CF3AB1E1D216B41008D28E2 /* README.md in Sources */,
+				2C5D031F1D1E28CB008AE18E /* HYEffectCollectionViewCell.m in Sources */,
 				2C5CED8C1D127DA000E53B9D /* NSArray+MASAdditions.m in Sources */,
+				2CF3AB1C1D216B41008D28E2 /* NSObject+MJProperty.m in Sources */,
 				2C5CED8D1D127DA000E53B9D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				2C5CED551D123E6500E53B9D /* HYCategoryViewController.m in Sources */,
 				2C5CED981D1280F800E53B9D /* HYinputView.m in Sources */,
+				2C67D8471D211939007B46F1 /* HYSearchViewController.m in Sources */,
 				2C5CED681D1251CA00E53B9D /* main.m in Sources */,
 				2C5CED611D123F2E00E53B9D /* HYNavigationController.m in Sources */,
+				2C5D03221D1E595A008AE18E /* HYElseCollectionViewCell.m in Sources */,
 				2C536DB41D14145800F1E354 /* HYLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,6 +1122,7 @@
 			baseConfigurationReference = 5255576C337FE0527E996C98 /* Pods-电商项目.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "电商项目/PrefixHeader.pch";
 				INFOPLIST_FILE = "电商项目/Info.plist";
@@ -839,6 +1138,7 @@
 			baseConfigurationReference = E8ABCED0C0B462F92CF0A7B3 /* Pods-电商项目.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "电商项目/PrefixHeader.pch";
 				INFOPLIST_FILE = "电商项目/Info.plist";

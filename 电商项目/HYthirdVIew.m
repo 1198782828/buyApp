@@ -12,9 +12,6 @@
 
 @property (strong , nonatomic) UILabel * lineLabel;
 @property (strong , nonatomic) UILabel * label;
-@property (strong , nonatomic) UIButton * QQbutton;
-@property (strong , nonatomic) UIButton * WBbutton;
-@property (strong , nonatomic) UIButton * WXbutton;
 
 @end
 
@@ -44,7 +41,7 @@
     
     [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.mas_top).offset(0);
-        make.center.equalTo(weakSelf.lineLabel.mas_centerX).offset(0);
+        make.centerX.equalTo(weakSelf.lineLabel.mas_centerX).offset(0);
         make.size.equalTo(CGSizeMake(100, 25));
     }];
     

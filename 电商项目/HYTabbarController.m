@@ -49,7 +49,7 @@
                                                         } forState:(UIControlStateSelected)];
     
     self.viewControllers = muarray;
-    self.selectedIndex = 0;
+    self.selectedIndex = 1;
 }
 
 #pragma mark -

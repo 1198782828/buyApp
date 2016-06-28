@@ -8,15 +8,15 @@
 
 #import "HYinputView.h"
 #import "HYLoginViewController.h"
+#import "HYBaseViewController.h"
+#define URL @"http://123.57.141.249:8080/beautalk/appMember/appLogin.do"
 
 @interface HYinputView ()
 
 @property (strong , nonatomic) UILabel * backLabel;
-@property (strong , nonatomic) UITextField * nameText;
-@property (strong , nonatomic) UITextField * passText;
+
 @property (strong , nonatomic) UILabel * lineLabel;
 @property (strong , nonatomic) UIButton * loginButton;
-@property (strong , nonatomic) UIButton * registerButton;
 
 @end
 
@@ -26,10 +26,10 @@
     if (self = [super initWithFrame:frame]) {
         [self addSubview:self.backLabel];
         [self addSubview:self.nameText];
-        [self addSubview:self.lineLabel];
         [self addSubview:self.passText];
         [self addSubview:self.registerButton];
         [self addSubview:self.loginButton];
+        [self addSubview:self.lineLabel];
     }
     return self;
 }
@@ -43,8 +43,8 @@
     __weak typeof(self) weakSelf = self;
     [self.backLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.mas_top).offset(15);
-        make.left.equalTo(weakSelf.mas_left).offset(0);
-        make.right.equalTo(weakSelf.mas_right).offset(0);
+        make.left.equalTo(weakSelf.mas_left).offset(-1);
+        make.right.equalTo(weakSelf.mas_right).offset(1);
         make.height.equalTo(88);
     }];
     
@@ -121,7 +121,7 @@
 - (UILabel *)lineLabel {
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc]init];
-        _lineLabel.backgroundColor = [UIColor grayColor];
+        _lineLabel.backgroundColor = [UIColor darkGrayColor];
     }
     return _lineLabel;
 }
@@ -145,6 +145,7 @@
     return _loginButton;
 }
 
+///免费注册方法
 - (void)LoginMethod {
     HYLoginViewController * loginVC = [[HYLoginViewController alloc]init];
     [self.viewController.navigationController pushViewController:loginVC animated:YES];

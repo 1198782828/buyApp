@@ -15,13 +15,7 @@
 
 @property (strong , nonatomic) UILabel * label;
 
-@property (strong , nonatomic) UITextField * nameText;
-
 @property (strong , nonatomic) UILabel * lineLabel;
-
-@property (strong , nonatomic) UITextField * passText;
-
-@property (strong , nonatomic) UIButton * downButton;
 
 @property (strong , nonatomic) UIButton * restrictButton;
 
@@ -35,10 +29,10 @@
         [self addSubview:self.backLabel];
         [self addSubview:self.label];
         [self addSubview:self.nameText];
-        [self addSubview:self.lineLabel];
         [self addSubview:self.passText];
         [self addSubview:self.downButton];
         [self addSubview:self.restrictButton];
+        [self addSubview:self.lineLabel];
     }
     return self;
 }
@@ -114,6 +108,7 @@
         _label.font = [UIFont systemFontOfSize:14.0];
         _label.textColor = [UIColor grayColor];
         _label.backgroundColor = [UIColor groupTableViewBackgroundColor];
+//        clearcolor透明背景
     }
     return _label;
 }
@@ -122,7 +117,7 @@
     if (!_lineLabel) {
         
         _lineLabel = [[UILabel alloc]init];
-        _lineLabel.backgroundColor = [UIColor grayColor];
+        _lineLabel.backgroundColor = [UIColor darkGrayColor];
     }
     return _lineLabel;
 }
@@ -170,13 +165,5 @@
     HYMasonryViewController * masonryVC = [[HYMasonryViewController alloc]init];
     [self.viewController.navigationController pushViewController:masonryVC animated:YES];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

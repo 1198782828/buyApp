@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "HYTabbarController.h"
+#import <UMSocial.h>
+#import <UMSocialQQHandler.h>
+#import <UMSocialWechatHandler.h>
 
 @interface AppDelegate ()
 
@@ -21,9 +24,28 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     HYTabbarController * tabBarController = [[HYTabbarController alloc]init];
     self.window.rootViewController = tabBarController;
+    
+    //第三方
+    [UMSocialData setAppKey:@"507fcab25270157b37000010"];
+    
+    //设置分享到QQ/Qzone的应用Id，和分享url 链接
+    [UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
+    
+    //设置微信AppId、appSecret，分享url
+    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
+    
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    BOOL result = [UMSocialSnsService handleOpenURL:url];
+    if (result == FALSE) {
+        //调用其他SDK，例如支付宝SDK等
+    }
+    return result;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -6,8 +6,14 @@
 //  Copyright © 2016年 hy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HYBaseViewController.H"
 
-@interface HYLoginViewController : UIViewController
+typedef void(^nameText)(NSString *);
+typedef void(^passText)(NSString *);
+
+@interface HYLoginViewController : HYBaseViewController
+
+@property (copy , nonatomic) nameText nameTextBlock;
+@property (copy , nonatomic) passText passTextBlock;
 
 @end

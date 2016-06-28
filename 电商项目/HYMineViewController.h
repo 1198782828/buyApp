@@ -7,7 +7,19 @@
 //
 
 #import "HYBaseViewController.h"
+#import "HYLoginDialog.h"
+#import "HYLoginTableView.h"
+#import "HYYetLoginView.h"
 
 @interface HYMineViewController : HYBaseViewController
+
+///退出登录按钮
+@property (strong , nonatomic) UIButton * exitBtn;
+
+///已登录用户框
+@property (strong , nonatomic) HYYetLoginView * yetLogin;
+
+///未登录用户框
+@property (strong , nonatomic)HYLoginDialog * loginDialog;
 
 @end

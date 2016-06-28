@@ -10,4 +10,8 @@
 
 @interface HYthirdVIew : UIView
 
+@property (strong , nonatomic) UIButton * QQbutton;
+@property (strong , nonatomic) UIButton * WBbutton;
+@property (strong , nonatomic) UIButton * WXbutton;
+
 @end

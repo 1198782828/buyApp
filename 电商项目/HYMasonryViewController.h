@@ -6,8 +6,9 @@
 //  Copyright © 2016年 hy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+ 
+#import "HYBaseViewController.h"
 
-@interface HYMasonryViewController : UIViewController
+@interface HYMasonryViewController : HYBaseViewController
 
 @end
